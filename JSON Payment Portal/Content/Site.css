@@ -22,3 +22,9 @@ select,
 textarea {
     max-width: 280px;
 }
+
+/*overide the default jumbotron elements*/
+.jumbotron{
+    background-image: url(http://efdreams.com/data_images/dreams/sun/sun-07.jpg);
+    color: white;
+}
