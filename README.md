@@ -1,6 +1,6 @@
 # Interstellar-Energy-Payment-Portal
 
-##--Underconstruction--
+##--Under Construction--
 
 ###Use
  - This site is intended to be an example of a payment portal to provide users access to instant financing approvals for energy systems, such as solar.
