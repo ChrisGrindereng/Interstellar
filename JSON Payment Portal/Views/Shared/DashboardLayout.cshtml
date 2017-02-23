@@ -14,7 +14,8 @@
 
 </head>
 <body>
-    <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="RateModal" class="modal fade" data-keyboard="false" data-backdrop="static">
+    @*`````not sure what this does``````*@
+    @*<div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="RateModal" class="modal fade" data-keyboard="false" data-backdrop="static">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -25,7 +26,7 @@
                     </div>
                     <div>
                         <div id="ctl00_ratRatings" class="RadRating RadRating_Default" class="divRatings" style="float: left; margin-left: -5px;">
-                            <!-- 2014.2.724.40 --><ul class="rrtHalf">
+                             2014.2.724.40 <ul class="rrtHalf">
                                 <li><a title="1" href="#"><span>1</span></a></li>
                                 <li><a title="2" href="#"><span>2</span></a></li>
                                 <li><a title="3" href="#"><span>3</span></a></li>
@@ -44,9 +45,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>*@
+
+
     <header class="header dash-header">
-       @*old code for header with responsive nav menu! may use later on*@ 
+       @*``````old code for header with responsive nav menu! may use later on``````*@ 
          @*<nav class="navbar navbar-default navbar-fixed-top">
             <div class="container-fluid padlr">
                 <!-- Brand and toggle get grouped for better mobile display -->
@@ -114,99 +117,74 @@
         <div class="container-fluid padlr">
             <div class="headadddiv">
                 <div class="user-heading">My Home Dashboard</div>
-                <div class="addressdiv maxwidth400px">
+                @*<div class="addressdiv maxwidth400px">
                     <strong>Address:</strong>
                     3018 Prescott Street Texas United States 77025<br />
                     <strong>Project Name:</strong>
                     VASAM_TX_00250
-                </div>
+                </div>*@
             </div>
-            <div class="user-heading-rigdiv">
-                <div class="userstatus userstatus1">
-                    <span>@Html.ActionLink("View Notes", "ProjectNotes", "Dashboard")<!--<a href="/Customer/ProjectNotesView.aspx?Id=5XI3Ym7rHQc%3d" id="ctl00_aViewNote" title="View Notes">view notes</a>--></span><span>&nbsp;&nbsp;|&nbsp;</span>
-                    <span>Status:&nbsp; </span><span style="" class='active' id="Span1">Active</span>
-                </div>
-                <div id="ctl00_divViewNoteDocumentHeaderLink" class="userlink">
-
-
-
-                </div>
-            </div>
+            @*`````Admin feature for later````*@
+      @*<div class="user-heading-rigdiv">
+        <div class="userstatus userstatus1">
+            <span>@Html.ActionLink("View Notes", "ProjectNotes", "Dashboard")<a href="/Customer/ProjectNotesView.aspx?Id=5XI3Ym7rHQc%3d" id="ctl00_aViewNote" title="View Notes">view notes</a></span><span>&nbsp;&nbsp;|&nbsp;</span>
+            <span>Status:&nbsp; </span><span style="" class='active' id="Span1">Active</span>
+        </div>
+        <div id="ctl00_divViewNoteDocumentHeaderLink" class="userlink">
+        </div>
+        </div>*@
         </div>
     </section>
+    
+    
     <section id="ctl00_divStatusProgress" class="dashnavdiv">
 
         <div class="container-fluid padlr">
             <div class="progressNav">
                 <ul>
-                    <li id="ctl00_aMenuSolarPVSystem1" class="active" title="BUILD MY SOLAR SYSTEM">
+                    <li id="ctl00_aMenuSiteSurveyDocUpload1" class="" title="SUBMIT MY INFORMATION">
                         <span class="icon-tick"></span>
-                        <span id="ctl00_ltrInputSystemSize" title="BUILD MY QUOTE" class="text">BUILD MY SOLAR QUOTE</span>
+                        <span class="text" title="SUBMIT MY INFORMATION">Submit My Information</span>
                     </li>
-                    <li id="ctl00_aMenuFinancingOption" title="CHOOSE FINANCING" class="curprocc">
+                    <li id="ctl00_aMenuSolarPVSystem1" class="active" title="System">
                         <span class="icon-tick"></span>
-                        <span title="CHOOSE FINANCING" class="text">
-                            Choose Financing<br />
-                        </span>
-                    </li>
-                    <li id="ctl00_aMenuSiteSurveyDocUpload1" class="" title="SUBMIT MY HOME INFORMATION">
-                        <span class="icon-tick"></span>
-                        <span class="text" title="SUBMIT MY HOME INFORMATION">Submit My Home Information</span>
+                        <span id="ctl00_ltrInputSystemSize" title="Solar System" class="text">Select System</span>
                     </li>
                     <li id="ctl00_aMenuChooseInstaller1" class="" title="SELECT INSTALLERS">
                         <span class="icon-tick"></span>
-                        <span title="SELECT INSTALLERS" class="text">
-                            Select<br />
-                            Installers
-                            To Bid
+                        <span title="SELECT INSTALLERS" class="text">Select Installers</span>
+                    </li>                  
+                    <li id="ctl00_aMenuFinancingOption" title="Choose Financing Options" class="curprocc">
+                        <span class="icon-tick"></span>
+                        <span title="CHOOSE FINANCING" class="text">
+                            Choose Financing Options
                         </span>
                     </li>
-                    <!--<li id="ctl00_aMenuSystemDesign1" class="active" title="SOLAR ELECTRIC SYSTEM DESIGNED">
+                    <li id="ctl00_aMenuPaperwork" title="FINALIZE INFORMATION" class="">
                         <span class="icon-tick"></span>
-                        <span title="SOLAR ELECTRIC SYSTEM DESIGNED" class="text">
-                            SOLAR ELECTRIC<br />
-                            SYSTEM
-                            DESIGNED
-                        </span>
+                        <span title="FINALIZE DESIGN" class="text">Finalize Information</span>
                     </li>
-                    <li id="ctl00_aMenuFinalizedofBid1" title="CHOOSE INSTALLER" class="active">
-                        <span class="icon-tick"></span>
-                        <span title="CHOOSE INSTALLER" class="text">Choose Installer</span>
-                    </li>
-                    <li id="ctl00_aMenuPaperwork" title="SUBMIT PAPERWORK" class="active">
-                        <span class="icon-tick"></span>
-                        <span title="SUBMIT PAPERWORK" class="text">SUBMIT PAPERWORK</span>
-                    </li>-->
-                    <li id="ctl00_aMenuPaperwork" title="FINALIZE DESIGN" class="">
-                        <span class="icon-tick"></span>
-                        <span title="FINALIZE DESIGN" class="text">FINALIZE DESIGN</span>
-                    </li>
-
-                    <li id="ctl00_aMenuSystemInstalledByInstaller1" title="SYSTEM INSTALLED &amp; COMMISSIONED" class="">
-                        <span class="icon-tick"></span>
-                        <span title="SYSTEM INSTALLED & COMMISSIONED" class="text">
-                            System Installed
-                            <br />
-                            &amp; Commissioned
-                        </span>
-                    </li>
-                    <li id="ctl00_aMenuSubmitReview1" title="SUBMIT REVIEWS" class="">
+                    <li id="ctl00_aMenuSubmitReview1" title="Get Approved" class="">
                         <span class="icon-tick"></span>
                         <span class="text">
-                            Submit<br />
+                            Submit
                             Reviews
                         </span>
                     </li>
                 </ul>
             </div>
-            <div class="smnavinfodiv">
+          
+            
+            
+            
+            @*<div class="smnavinfodiv">
                 <div id="ctl00_divCurrentStatus" class="currentnavname" style="display: none;">
                     CHOOSE FINANCING
                 </div>
                 <div id="ctl00_divNextStatus" class="nextproocess">
                     <a href="/Customer/ProjectDocumentView.aspx?Id=5XI3Ym7rHQc%3d" id="ctl00_ltrNextStatus">NEXT: SUBMIT PAPERWORK</a>
                 </div>
-            </div>
+            </div>*@
             <!--<div class="bignavinfodiv">
                 <span id="ctl00_lblCurrentStatus" class="currentnavname" style="display: none;">CHOOSE FINANCING</span>
                 <a href="/Customer/ProjectDocumentView.aspx?Id=5XI3Ym7rHQc%3d" id="ctl00_lblNextStatus" class="nextproocess">NEXT: CHOOSE FINANCING</a>
@@ -221,9 +199,9 @@
     function SetLeftactivemenu(id) {
         var href = $('#' + id).attr("href");
         if (href != undefined && href != "") {
-            //$('.boxgreen').removeClass("active");
-            //$('.boxgray').removeClass("active");
-            //$('.boxorange').removeClass("active");
+            $('.boxgreen').removeClass("active");
+            $('.boxgray').removeClass("active");
+            $('.boxorange').removeClass("active");
             $('#' + id).attr('style', 'background-color:#fff;');
         }
 
@@ -238,33 +216,36 @@
                             </span>
                         </a>
                         <!--<a href="/Customer/Finance.aspx?CustomerToProjectID=5XI3Ym7rHQc%3d" id="ctl00_Main_CustomerLeftMenu_aFinancing" title="MY FINANCING" class="list-group-item active">-->
-                        <a href="/Dashboard/ProjectFinancing?Id=5XI3Ym7rHQc%3d" id="ctl00_Main_CustomerLeftMenu_aFinancing" title="MY FINANCING" class="list-group-item " onclick="SetLeftactivemenu(this.id);">
-                            <div id="ctl00_Main_CustomerLeftMenu_divMyFinancing">
-                                <i class="financing-icon"></i>MY FINANCING
-                            </div>
-                        </a>
+                        
                         <!--<a href="/Customer/SiteSurveyAddEdit.aspx?CustomerToProjectID=5XI3Ym7rHQc%3d" id="ctl00_Main_CustomerLeftMenu_AUploadSiteSurveyDocument" title="MY HOME" class="list-group-item active">-->
-                        <a href="/Dashboard/ProjectSite?CustomerToProjectID=5XI3Ym7rHQc%3d" id="ctl00_Main_CustomerLeftMenu_AUploadSiteSurveyDocument" title="MY HOME" class="list-group-item">
+                        <a href="/Dashboard/ProjectSite?CustomerToProjectID=5XI3Ym7rHQc%3d" id="ctl00_Main_CustomerLeftMenu_AUploadSiteSurveyDocument" title="MY Information" class="list-group-item">
                             <span id="ctl00_Main_CustomerLeftMenu_divUploadSiteSurveyDocument">
-                                <i class="my-home-icon"></i>MY HOME
+                                <i class="my-home-icon"></i>MY INFORMATION
                             </span>
                         </a>
                         <!--<a href="/Customer/FinalizationofBid.aspx?CustomerToProjectID=5XI3Ym7rHQc%3d" id="ctl00_Main_CustomerLeftMenu_AChooseInstaller" title="MY INSTALLATION" class="list-group-item done">-->
+
+                        <!--<a href="/Customer/ProjectDocumentView.aspx?Id=5XI3Ym7rHQc%3d" id="ctl00_Main_CustomerLeftMenu_aMyDocument" title="MY DOCUMENTS" class="list-group-item active">-->
+                        @*------usfull for later when adding Documents-------*@
+                           @*<a href="/Dashboard/ProjectDocuments?Id=5XI3Ym7rHQc%3d" id="ctl00_Main_CustomerLeftMenu_aMyDocument" title="MY DOCUMENTS" class="list-group-item">
+                            <div id="ctl00_Main_CustomerLeftMenu_divDocument">
+                                <img src="../images/documentorange.png" id="ctl00_Main_CustomerLeftMenu_imgDocument" class="test" />MY DOCUMENTS
+                            </div>
+                        </a>*@
+                        <!--<a id="ctl00_Main_CustomerLeftMenu_aViewFeedback" title="MY EXPERIENCE" class="list-group-item">-->
+                        <a href="/Dashboard/ProjectSystem" id="ctl00_Main_CustomerLeftMenu_aViewFeedback" title="MY SYSTEM" class="list-group-item">
+                            <div id="ctl00_Main_CustomerLeftMenu_divFeedBack">
+                                <i class="experience-icon"></i>MY SYSTEM
+                            </div>
+                        </a>
                         <a href="/Dashboard/ProjectInstallation?CustomerToProjectID=5XI3Ym7rHQc%3d" id="ctl00_Main_CustomerLeftMenu_AChooseInstaller" title="MY INSTALLATION" class="list-group-item ">
                             <span id="ctl00_Main_CustomerLeftMenu_divChooseInstaller">
                                 <i class="installation-icon"></i>MY INSTALLATION
                             </span>
                         </a>
-                        <!--<a href="/Customer/ProjectDocumentView.aspx?Id=5XI3Ym7rHQc%3d" id="ctl00_Main_CustomerLeftMenu_aMyDocument" title="MY DOCUMENTS" class="list-group-item active">-->
-                        <a href="/Dashboard/ProjectDocuments?Id=5XI3Ym7rHQc%3d" id="ctl00_Main_CustomerLeftMenu_aMyDocument" title="MY DOCUMENTS" class="list-group-item">
-                            <div id="ctl00_Main_CustomerLeftMenu_divDocument">
-                                <img src="../images/documentorange.png" id="ctl00_Main_CustomerLeftMenu_imgDocument" class="test" />MY DOCUMENTS
-                            </div>
-                        </a>
-                        <!--<a id="ctl00_Main_CustomerLeftMenu_aViewFeedback" title="MY EXPERIENCE" class="list-group-item">-->
-                        <a href="/Dashboard/ProjectExperience" id="ctl00_Main_CustomerLeftMenu_aViewFeedback" title="MY EXPERIENCE" class="list-group-item">
-                            <div id="ctl00_Main_CustomerLeftMenu_divFeedBack">
-                                <i class="experience-icon"></i>MY EXPERIENCE
+                        <a href="/Dashboard/ProjectFinancing?Id=5XI3Ym7rHQc%3d" id="ctl00_Main_CustomerLeftMenu_aFinancing" title="MY FINANCING" class="list-group-item " onclick="SetLeftactivemenu(this.id);">
+                            <div id="ctl00_Main_CustomerLeftMenu_divMyFinancing">
+                                <i class="financing-icon"></i>MY FINANCING
                             </div>
                         </a>
                         <!--<a id="ctl00_Main_CustomerLeftMenu_aMyMonitoring" title="MY MONITORING" class="list-group-item">-->

@@ -27,4 +27,5 @@ textarea {
 .jumbotron{
     background-image: url(http://efdreams.com/data_images/dreams/sun/sun-07.jpg);
     color: white;
+    margin-top: 20px;
 }
