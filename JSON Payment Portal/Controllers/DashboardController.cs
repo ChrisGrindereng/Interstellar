@@ -6,18 +6,19 @@ using System.Data.Entity;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using JSON_Payment_Portal.Models;
 
 
 namespace FinancingAPI.Controllers
 {
     public class DashboardController : Controller
     {
+        private DB db = new DB();
 
-
-        // GET: Dashboard
+        // GET: /Dashboard
         public ActionResult Index()
         {
-            return RedirectToAction("");
+            return RedirectToAction("ProjectOverview");
         }
 
         public ActionResult ProjectOverview()
