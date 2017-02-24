@@ -297,6 +297,9 @@
     <Content Include="Views\Dashboard\PaymentForm.cshtml" />
     <Content Include="Views\Dashboard\ProjectOverview.cshtml" />
     <Content Include="Views\Dashboard\ProjectInformation.cshtml" />
+    <Content Include="Views\Dashboard\ProjectSystem.cshtml" />
+    <Content Include="Views\Dashboard\EditInformation.cshtml" />
+    <Content Include="Views\Dashboard\ProjectInstallation.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

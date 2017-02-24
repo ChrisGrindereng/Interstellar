@@ -2,7 +2,7 @@
     padding-top: 50px;
     padding-bottom: 20px;
     background-image: url(../Imgs/sun-07.jpg);
-    color: white;
+
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -44,7 +44,41 @@ textarea {
     opacity: .6;
 }
 
-#homeboard > #loginForm{
-    
+#homeboard > #loginForm {
     opacity: .6;
 }
+
+.card{
+  background: #fff;
+  border: 1px solid grey;
+  border-radius: 5px 5px;
+  display: inline-block;
+  margin: 1rem;
+  position: relative;
+  width: 300px;
+  text-align: center
+}
+.card-img-top {
+width: 20rem;
+border-radius: 5px 5px;
+}
+
+.card-1{
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card-1:hover{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+
+
+
+
+

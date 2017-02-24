@@ -31,7 +31,12 @@ namespace FinancingAPI.Controllers
             return View();
         }
 
-        public ActionResult ProjecrtSystem()
+        public ActionResult EditInformation()
+        {
+            return View();
+        }
+
+        public ActionResult ProjectSystem()
         {
             return View();
         }

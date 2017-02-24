@@ -101,11 +101,11 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    @Html.ActionLink("Intersteller Energy", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                    @Html.ActionLink("Intersteller Energy", "ProjectOverview", "Dashboard", new { area = "" }, new { @class = "navbar-brand" })
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li>@Html.ActionLink("Dashboard", "ProjectOverview", "Dashboard")</li>
                         <li>@Html.ActionLink("About", "About", "Home")</li>
                         <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                     </ul>
@@ -143,7 +143,7 @@
         <div class="container-fluid padlr">
             <div class="progressNav">
                 <ul>
-                    <li id="ctl00_aMenuSiteSurveyDocUpload1" class="" title="SUBMIT MY INFORMATION">
+                    <li id="ctl00_aMenuSiteSurveyDocUpload1" class="active" title="SUBMIT MY INFORMATION">
                         <span class="icon-tick"></span>
                         <span class="text" title="SUBMIT MY INFORMATION">Submit My Information</span>
                     </li>
@@ -151,25 +151,23 @@
                         <span class="icon-tick"></span>
                         <span id="ctl00_ltrInputSystemSize" title="Solar System" class="text">Select System</span>
                     </li>
-                    <li id="ctl00_aMenuChooseInstaller1" class="" title="SELECT INSTALLERS">
+                    <li id="ctl00_aMenuChooseInstaller1" class="active" title="SELECT INSTALLERS">
                         <span class="icon-tick"></span>
                         <span title="SELECT INSTALLERS" class="text">Select Installers</span>
                     </li>                  
-                    <li id="ctl00_aMenuFinancingOption" title="Choose Financing Options" class="curprocc">
+                    <li id="ctl00_aMenuFinancingOption" class="active" title="Choose Financing Options" class="curprocc">
                         <span class="icon-tick"></span>
                         <span title="CHOOSE FINANCING" class="text">
                             Choose Financing Options
                         </span>
                     </li>
-                    <li id="ctl00_aMenuPaperwork" title="FINALIZE INFORMATION" class="">
+                    <li id="ctl00_aMenuPaperwork" title="FINALIZE INFORMATION" class="active">
                         <span class="icon-tick"></span>
                         <span title="FINALIZE DESIGN" class="text">Finalize Information</span>
                     </li>
-                    <li id="ctl00_aMenuSubmitReview1" title="Get Approved" class="">
+                    <li id="ctl00_aMenuSubmitReview1" title="Get Approved" class="active">
                         <span class="icon-tick"></span>
-                        <span class="text">
-                            Submit
-                            Reviews
+                        <span class="text">Get Approved!
                         </span>
                     </li>
                 </ul>
