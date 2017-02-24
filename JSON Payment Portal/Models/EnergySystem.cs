@@ -10,7 +10,7 @@ namespace JSON_Payment_Portal.Models
     {
         int id { get; set; }
         string name { get; set; }
-        int EnergyOutPut { get; set; }
+        int EnergyOutput { get; set; }
         int cost { get; set; }
     }
 }

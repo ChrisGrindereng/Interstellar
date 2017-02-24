@@ -1,6 +1,8 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-image: url(../Imgs/sun-07.jpg);
+    color: white;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -25,7 +27,24 @@ textarea {
 
 /*overide the default jumbotron elements*/
 .jumbotron{
-    background-image: url(http://efdreams.com/data_images/dreams/sun/sun-07.jpg);
-    color: white;
     margin-top: 20px;
+    color: white;
+    background: black;
+}
+
+#loginForm{
+    color: white;
+    border-radius: 5px 5px;
+    background: black;
+
+}
+
+#homeboard > .jumbotron{
+    
+    opacity: .6;
+}
+
+#homeboard > #loginForm{
+    
+    opacity: .6;
 }

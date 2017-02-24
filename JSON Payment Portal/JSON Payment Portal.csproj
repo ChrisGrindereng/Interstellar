@@ -235,6 +235,7 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Imgs\sun-07.jpg" />
     <Content Include="Scripts\dashboard.js" />
     <Content Include="Styles\dashboard.css" />
     <Content Include="favicon.ico" />
@@ -295,6 +296,7 @@
     <Content Include="Views\Shared\DashboardLayout.cshtml" />
     <Content Include="Views\Dashboard\PaymentForm.cshtml" />
     <Content Include="Views\Dashboard\ProjectOverview.cshtml" />
+    <Content Include="Views\Dashboard\ProjectInformation.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

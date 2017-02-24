@@ -26,12 +26,12 @@ namespace FinancingAPI.Controllers
             return View();
         }
 
-        public ActionResult ProjectFinancing()
+        public ActionResult ProjectInformation()
         {
             return View();
         }
 
-        public ActionResult ProjectSite()
+        public ActionResult ProjecrtSystem()
         {
             return View();
         }
@@ -42,22 +42,12 @@ namespace FinancingAPI.Controllers
             return View();
         }
 
-        public ActionResult ProjectDocuments()
+        public ActionResult ProjectFinancing()
         {
             return View();
         }
 
-        public ActionResult ProjectExperience()
-        {
-            return View();
-        }
-
-        public ActionResult ProjectMonitoring()
-        {
-            return View();
-        }
-
-        public ActionResult ProjectPayment()
+        public ActionResult ProjectPaymentPortal()
         {
             return View();
         }

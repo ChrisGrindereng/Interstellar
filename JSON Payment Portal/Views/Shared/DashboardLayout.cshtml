@@ -8,9 +8,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>@(String.IsNullOrEmpty(ViewBag.Title) ? "ProjectDashboard | Customer" : ViewBag.Title)</title>
     <link rel="stylesheet" type="text/css" href="~/Content/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="~/Content/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/bootstrap.min.css" /> 
     <link rel="stylesheet" type="text/css" href="~/Content/Site.css" />
     <link rel="stylesheet" type="text/css" href="~/Styles/dashboard.css" />
+
 
 </head>
 <body>
@@ -116,7 +117,7 @@
     <section id="ctl00_divSolarPVDetailHeader" class="userinfo-wrapper">
         <div class="container-fluid padlr">
             <div class="headadddiv">
-                <div class="user-heading">My Home Dashboard</div>
+                <div class="user-heading">My Dashboard</div>
                 @*<div class="addressdiv maxwidth400px">
                     <strong>Address:</strong>
                     3018 Prescott Street Texas United States 77025<br />
@@ -218,7 +219,7 @@
                         <!--<a href="/Customer/Finance.aspx?CustomerToProjectID=5XI3Ym7rHQc%3d" id="ctl00_Main_CustomerLeftMenu_aFinancing" title="MY FINANCING" class="list-group-item active">-->
                         
                         <!--<a href="/Customer/SiteSurveyAddEdit.aspx?CustomerToProjectID=5XI3Ym7rHQc%3d" id="ctl00_Main_CustomerLeftMenu_AUploadSiteSurveyDocument" title="MY HOME" class="list-group-item active">-->
-                        <a href="/Dashboard/ProjectSite?CustomerToProjectID=5XI3Ym7rHQc%3d" id="ctl00_Main_CustomerLeftMenu_AUploadSiteSurveyDocument" title="MY Information" class="list-group-item">
+                        <a href="/Dashboard/ProjectInformation?CustomerToProjectID=5XI3Ym7rHQc%3d" id="ctl00_Main_CustomerLeftMenu_AUploadSiteSurveyDocument" title="MY Information" class="list-group-item">
                             <span id="ctl00_Main_CustomerLeftMenu_divUploadSiteSurveyDocument">
                                 <i class="my-home-icon"></i>MY INFORMATION
                             </span>
@@ -243,7 +244,7 @@
                                 <i class="installation-icon"></i>MY INSTALLATION
                             </span>
                         </a>
-                        <a href="/Dashboard/ProjectFinancing?Id=5XI3Ym7rHQc%3d" id="ctl00_Main_CustomerLeftMenu_aFinancing" title="MY FINANCING" class="list-group-item " onclick="SetLeftactivemenu(this.id);">
+                        <a href="/Dashboard/PaymentForm?Id=5XI3Ym7rHQc%3d" id="ctl00_Main_CustomerLeftMenu_aFinancing" title="MY FINANCING" class="list-group-item " onclick="SetLeftactivemenu(this.id);">
                             <div id="ctl00_Main_CustomerLeftMenu_divMyFinancing">
                                 <i class="financing-icon"></i>MY FINANCING
                             </div>
