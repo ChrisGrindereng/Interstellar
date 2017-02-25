@@ -11,75 +11,173 @@
     <title></title>
 </head>
 <body>
-    <div>
-        <form>
-            <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-            </div>
-            <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-            </div>
-            <div class="form-group">
-                <label for="exampleSelect1">Example select</label>
-                <select class="form-control" id="exampleSelect1">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="exampleSelect2">Example multiple select</label>
-                <select multiple class="form-control" id="exampleSelect2">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="exampleTextarea">Example textarea</label>
-                <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-            </div>
-            <div class="form-group">
-                <label for="exampleInputFile">File input</label>
-                <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
-                <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
-            </div>
-            <fieldset class="form-group">
-                <legend>Radio buttons</legend>
-                <div class="form-check">
-                    <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                        Option one is this and that&mdash;be sure to include why it's great
-                    </label>
+    <div class="bhoechie-tab">
+        <div class="bhoechie-tab-content active">
+            <p style="font-size:medium;margin-bottom:20px;">Start by giving us some information about your current energy provider and how you would like to handle payments for your new energy system. Then we will need some final Personal information to finish things off and get you approved.</p>
+            <div class="panel panel-default">
+                <div class="panel-heading noNote">
+                    <div class="title-right"></div>
+                    <div class="panel-title">Project Details</div>
                 </div>
-                <div class="form-check">
-                    <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
-                        Option two can be something else and selecting it will deselect option one
-                    </label>
+                <div class="panel-body overflowH">
+                    <div class="form-horizontal group-border hover-stripped formView">
+                        <form>
+                            @*-----Energy Selector----*@
+                            <div class="form-group" style="padding-left: 5px">
+                                <label for="EnergyProvider">Select Your Current Energy Provider</label>
+                                <select class="form-control">
+                                    <option>Relient</option>
+                                    <option>Green Mountain</option>
+                                    <option>TXU</option>
+                                    <option>Other</option>
+                                    </select>
+                              </div>
+                            @*-----Monthly Payment----*@
+                            <div class="form-group" style="padding-left: 5px">
+                                <label for="MonthlyPayment">Current Average Monthly Payment</label>
+                                <input type="text" class="form-control" placeholder="Enter your current average monthly payment.">
+                            </div>
+                            @*-----Savings----*@ 
+                            <div class="form-group">
+                                    <label for="Savings">How much would you like to save on your monthly payment?</label>
+                                    <select multiple class="form-control" id="exampleSelect2">
+                                        <option>5%</option>
+                                        <option>10%</option>
+                                        <option>20%</option>
+                                        <option>30%</option>
+                                        <option>50%</option>
+                                    </select>
+                                </div>
+
+                                @*<div class="form-group">
+                                    <label for="exampleTextarea">Example textarea</label>
+                                    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputFile">File input</label>
+                                    <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+                                    <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
+                                </div>*@
+
+                            @*------percent down selection------*@
+                                <fieldset class="form-group">
+                                    <legend>Please Select From the Following Financing Options</legend>
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                            10% Down Payment with 48 months
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+                                            20% Down Payment with 36 months
+                                        </label>
+                                    </div>
+                                    <div class="form-check disabled">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3">
+                                            50% Down Payment with 24 months 
+                                        </label>
+                                    </div>
+                                </fieldset>
+                            @*------term of the loan------*@
+                            @*<fieldset class="form-group">
+                                <legend>Please Select From the Following Monthly Payment Options</legend>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                        24 months 
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+                                        36 months
+                                    </label>
+                                </div>
+                                <div class="form-check disabled">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3">
+                                        48 months
+                                    </label>
+                                </div>
+                            </fieldset>*@
+                         
+                            @*-----State Selector----*@
+                            <div class="form-group" style="padding-left: 5px">
+                                <label for="State">Select the State on your drivers lincense</label>
+                                <select class="form-control">
+                                    <option>Alabama</option>
+                                    <option>Alaska</option>
+                                    <option>Arizona</option>
+                                    <option>Arkansas</option>
+                                    <option>California</option>
+                                    <option>Colorado</option>
+                                    <option>Connecticut</option>
+                                    <option>Delaware</option>
+                                    <option>Florida</option>
+                                    <option>Georgia</option>
+                                    <option>Hawaii</option>
+                                    <option>Idaho</option>
+                                    <option>Illinois</option>
+                                    <option>Indiana</option>
+                                    <option>Iowa</option>
+                                    <option>Kansas</option>
+                                    <option>Kentucky</option>
+                                    <option>Louisiana</option>
+                                    <option>Maine</option>
+                                    <option>Maryland</option>
+                                    <option>Massachusetts</option>
+                                    <option>Michigan</option>
+                                    <option>Minnesota</option>
+                                    <option>Mississippi</option>
+                                    <option>Missouri</option>
+                                    <option>Montana</option>
+                                    <option>Nebraska</option>
+                                    <option>Nevada</option>
+                                    <option>New Hampshire</option>
+                                    <option>New Jersey</option>
+                                    <option>New Mexico</option>
+                                    <option>New York</option>
+                                    <option>North Carolina</option>
+                                    <option>North Dakota</option>
+                                    <option>Ohio</option>
+                                    <option>Oklahoma</option>
+                                    <option>Oregon</option>
+                                    <option>Pennsylvania</option>
+                                    <option>Rhode Island</option>
+                                    <option>South Carolina</option>
+                                    <option>South Dakota</option>
+                                    <option>Tennessee</option>
+                                    <option>Texas</option>
+                                    <option>Utah</option>
+                                    <option>Vermont</option>
+                                    <option>Virginia</option>
+                                    <option>Washington</option>
+                                    <option>West Virginia</option>
+                                    <option>Wisconsin</option>
+                                    <option>Wyoming</option>
+                                </select>
+                            </div>
+                            @*-----Drivers License number----*@
+                            <div class="form-group" style="padding-left: 5px">
+                                <label for="DriversLicenseNumber">Please enter your drivers license number</label>
+                                <input type="text" class="form-control" aria-describedby="address2" placeholder="Please enter your drivers lincense number.">
+                                <small class="form-text text-muted">This will not be stored in our system but is needed for financial approval.</small>
+                            </div>
+                            @*-----SSN----*@
+                            <div class="form-group" style="padding-left: 5px">
+                                <label for="SSN">Social Security Number</label>
+                                <input type="text" class="form-control" placeholder="Please enter your ssn">
+                                <small class="form-text text-muted">This will not be stored in our system but is needed for financial approval.</small>
+                            </div>
+                            <a href="../Dashboard/Approval" class="ss-button" type="submit" style="padding: 15px; text-align: center; display: block;  border-radius: 40px; height: 50px; margin-top: 0; margin-bottom: 30px; width: 300px; background-color: #00cd00; border: none; color: white; font-size: 16px;">Submit</a>
+                        </form>
+                    </div>
                 </div>
-                <div class="form-check disabled">
-                    <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
-                        Option three is disabled
-                    </label>
-                </div>
-            </fieldset>
-            <div class="form-check">
-                <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input">
-                    Check me out
-                </label>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+        </div>
     </div>
 </body>
 </html>

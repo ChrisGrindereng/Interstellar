@@ -52,6 +52,16 @@ namespace FinancingAPI.Controllers
             return View();
         }
 
+        public ActionResult PaymentForm()
+        {
+            return View();
+        }
+
+        public ActionResult Approval()
+        {
+            return View();
+        }
+
         public ActionResult ProjectPaymentPortal()
         {
             return View();
