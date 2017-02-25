@@ -1673,11 +1673,10 @@ html .package-table table td.nested-table .inner-table {
 }
 
 .user-heading {
-    float: left;
+    
     font-size: 36px;
     font-weight: 300;
-    color: #202628;
-    line-height: 1;
+    
 }
 
 .addressdiv {
@@ -1766,6 +1765,7 @@ html .package-table table td.nested-table .inner-table {
 /*Prograse*/
 .progressNav {
     min-height: 72px;
+    padding-left: 15%;
 }
 
     .progressNav ul {
@@ -2281,7 +2281,10 @@ float:left; border-bottom:none; width:auto;
 }
 
 .headadddiv {
-    float: left;
+    
+    margin-left: 40%;
+    color: white;
+    
 }
 
 .userstatsp {

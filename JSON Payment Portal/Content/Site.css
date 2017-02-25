@@ -30,23 +30,26 @@ textarea {
     margin-top: 20px;
     color: white;
     background: black;
+    
 }
 
 #loginForm{
-    color: white;
+    
     border-radius: 5px 5px;
     background: black;
 
 }
 
-#homeboard > .jumbotron{
-    
+#homeboard {
+    border-radius: 5px 5px;
     opacity: .6;
+    color: white;
 }
 
-#homeboard > #loginForm {
-    opacity: .6;
+#notTransparent{
+    opacity: 1;
 }
+
 
 .card{
   background: #fff;
@@ -74,6 +77,10 @@ border-radius: 5px 5px;
 
 ul{
     list-style-type: none;
+}
+
+footer{
+    color: lightgrey;
 }
 
 
