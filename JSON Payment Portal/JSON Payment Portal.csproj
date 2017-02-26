@@ -300,6 +300,8 @@
     <Content Include="Views\Dashboard\ProjectSystem.cshtml" />
     <Content Include="Views\Dashboard\EditInformation.cshtml" />
     <Content Include="Views\Dashboard\ProjectInstallation.cshtml" />
+    <Content Include="Views\Dashboard\Approval.cshtml" />
+    <Content Include="Views\Account\NotApproved.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

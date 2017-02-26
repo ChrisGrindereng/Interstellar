@@ -13,7 +13,11 @@ namespace FinancingAPI.Controllers
 {
     public class DashboardController : Controller
     {
-        private DB db = new DB();
+        private DB db;
+        public DashboardController()
+        {
+            this.db = db;
+        }
 
         // GET: /Dashboard
         public ActionResult Index()
@@ -62,7 +66,7 @@ namespace FinancingAPI.Controllers
             return View();
         }
 
-        public ActionResult ProjectPaymentPortal()
+        public ActionResult NotApproved()
         {
             return View();
         }

@@ -34,10 +34,7 @@ textarea {
 }
 
 #loginForm{
-    
-    border-radius: 5px 5px;
-    background: black;
-
+    color: white;
 }
 
 #homeboard {
@@ -45,11 +42,6 @@ textarea {
     opacity: .6;
     color: white;
 }
-
-#notTransparent{
-    opacity: 1;
-}
-
 
 .card{
   background: #fff;
