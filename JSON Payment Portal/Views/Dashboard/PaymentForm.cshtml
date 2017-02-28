@@ -26,8 +26,8 @@
                             <div class="form-group" style="padding-left: 5px">
                                 <label for="EnergyProvider">Select Your Current Energy Provider</label>
                                 <select class="form-control">
-                                    <option>Relient</option>
-                                    <option>Green Mountain</option>
+                                    <option>Reliant</option>
+                                    <option >Green Mountain</option>
                                     <option>TXU</option>
                                     <option>Other</option>
                                     </select>
@@ -35,7 +35,7 @@
                             @*-----Monthly Payment----*@
                             <div class="form-group" style="padding-left: 5px">
                                 <label for="MonthlyPayment">Current Average Monthly Payment</label>
-                                <input type="text" class="form-control" placeholder="Enter your current average monthly payment.">
+                                <input type="number" class="form-control" placeholder="210">
                             </div>
                             @*-----Savings----*@ 
                             <div class="form-group">
@@ -45,7 +45,7 @@
                                         <option>10%</option>
                                         <option>20%</option>
                                         <option>30%</option>
-                                        <option>50%</option>
+                                        <option selected="selected">40%</option>
                                     </select>
                                 </div>
 
@@ -65,19 +65,19 @@
                                     <div class="form-check">
                                         <label class="form-check-label">
                                             <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                                            10% Down Payment with 48 months
+                                            10% Down Payment with 48 month loan
                                         </label>
                                     </div>
                                     <div class="form-check">
                                         <label class="form-check-label">
-                                            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
-                                            20% Down Payment with 36 months
+                                            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2" selected="selected">
+                                            20% Down Payment with 36 month loan
                                         </label>
                                     </div>
                                     <div class="form-check disabled">
                                         <label class="form-check-label">
                                             <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3">
-                                            50% Down Payment with 24 months 
+                                            50% Down Payment with 24 month loan
                                         </label>
                                     </div>
                                 </fieldset>
@@ -150,7 +150,7 @@
                                     <option>South Carolina</option>
                                     <option>South Dakota</option>
                                     <option>Tennessee</option>
-                                    <option>Texas</option>
+                                    <option selected="selected">Texas</option>
                                     <option>Utah</option>
                                     <option>Vermont</option>
                                     <option>Virginia</option>
@@ -163,13 +163,13 @@
                             @*-----Drivers License number----*@
                             <div class="form-group" style="padding-left: 5px">
                                 <label for="DriversLicenseNumber">Please enter your drivers license number</label>
-                                <input type="text" class="form-control" aria-describedby="address2" placeholder="Please enter your drivers lincense number.">
+                                <input type="number" class="form-control" aria-describedby="address2" placeholder="147735">
                                 <small class="form-text text-muted">This will not be stored in our system but is needed for financial approval.</small>
                             </div>
                             @*-----SSN----*@
                             <div class="form-group" style="padding-left: 5px">
                                 <label for="SSN">Social Security Number</label>
-                                <input type="text" class="form-control" placeholder="Please enter your ssn">
+                                <input type="text" class="form-control" placeholder="867530900">
                                 <small class="form-text text-muted">This will not be stored in our system but is needed for financial approval.</small>
                             </div>
                             <a href="../Dashboard/Approval" class="ss-button" type="submit" style="padding: 15px; text-align: center; display: block;  border-radius: 40px; height: 50px; margin-top: 0; margin-bottom: 30px; width: 300px; background-color: #00cd00; border: none; color: white; font-size: 16px;">Submit</a>
