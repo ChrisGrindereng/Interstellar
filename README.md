@@ -1,7 +1,7 @@
 # Interstellar-Energy-Payment-Portal
 ###Link to live site:  http://interstellarfinancingportal.apphb.com/
  
-<img src=”/JSON%20Payment%20Portal/Screenshots/HomeScreen”></img>
+<img src=”~/JSON%20Payment%20Portal/Screenshots/HomeScreen”></img>
 
 ####Also see the repository for the Interstellar Financing API: https://github.com/ChrisGrindereng/Intersteller-Financing-API
 
