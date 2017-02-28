@@ -23,7 +23,7 @@
 - Newtonsoft.Json was a key to serializing and de-serializing JSON for the API call and response to the Financing API. 
 <img src=”/Screenshots/NewtonsoftScreen”></img>
 - Using async methods was also imperative to correctly make that call to the API.
-<img src=”/Screenshots/AsyncJSONScreen”></img>
+<img src=”JSON%20Payment%20Portal/Screenshots/AsyncJSONScreen.png”></img>
 
 ###Minimum Viable Product (Version 1)
  - User Log In with email. 
