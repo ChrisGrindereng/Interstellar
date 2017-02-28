@@ -3,7 +3,7 @@
  
 <img src=”~/Screenshots/HomeScreen”>
 
-###Also see the repository for the Interstellar Financing API: https://github.com/ChrisGrindereng/Intersteller-Financing-API
+####Also see the repository for the Interstellar Financing API: https://github.com/ChrisGrindereng/Intersteller-Financing-API
 
 ###Technologies
 - C# ASP.Net MVC, Razor Views, Bootstrap, jQuery, CSS, Html, JSON RESTful API, SQL server
@@ -24,7 +24,7 @@
 - Using async methods was also imperative to correctly make that call to the API.
 <img src=”~/Screenshots/AsyncJSONScreen”>
 
- ###Minimum Viable Product (Version 1)
+###Minimum Viable Product (Version 1)
  - User Log In with email. 
  - Dashboard Layout will allow for easy navigation.
  - User will fill out form providing information.
