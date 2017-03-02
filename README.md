@@ -1,5 +1,5 @@
 # Interstellar-Energy-Payment-Portal
-###Link to live site:  http://interstellarfinancingportal.apphb.com/
+###Link to live site:  http://interstellarfinancingportal.apphb.com/ (the initial load may take some time as the site is hosted on a free hosting platform) 
  
 <img src="JSON%20Payment%20Portal/Screenshots/HomeScreen.png"/>
 
@@ -24,7 +24,7 @@
 ###Tools 
 - Newtonsoft.Json was a key to serializing and de-serializing JSON for the API call and response to the Financing API. 
 
-<img src=”JSON%20Payment%20Portal/Screenshots/NewtonsoftScreen.png”/>
+<img src="JSON%20Payment%20Portal/Screenshots/NewtonsoftScreen.png"/>
 - Using async methods was also imperative to correctly make that call to the API.
 
 <img src="JSON%20Payment%20Portal/Screenshots/AsyncJSONScreen.png"/>
