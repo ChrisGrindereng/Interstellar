@@ -38,7 +38,7 @@
  - Once user selects all options they will submit approval for financing from Interstellar Lender. 
  - After this information has been submitted, the user will receive an approval status and be prompted to continue. 
 
-###Contributions to be added (for Version2)
+### Contributions to be added (for Version2)
 - Adding greater complexity to the financing model. This will allow for increasing the number of options on the final financing form and allow the user to further tailor their financing options.  
 
 <img src="JSON%20Payment%20Portal/Screenshots/ProjectFinancingScreen.png"/>
